@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <meta name="author" content="Wendel de Andrade | Shindagami">
+ <meta name="description" content="HTML, css, responsivo, young, teste, webdesign, estudo prático">
+ <title>Green Union | Login/Cadastro</title>
+ <link rel="shortcut icon" href="img/Icone aba (redondo).png">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+ <link rel="stylesheet" href="./css/style.css">
+ <link rel="stylesheet" href="./css/style_cadastro.css">
+ <link rel="stylesheet" href="./css/resposivo.css">
+
+</head>
+
+<body>
+
+ <header>
+
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+   <div class="container">
+    <a class="navbar-brand" href="#"><img src="./img/17_logo (Sem Nome).png" width="55" alt="Green Union"
+     title="ODS - 17 Parceria pelas Metas"></a>
+     <button class="navbar-toggler" type="button" data-toggle="collapse"
+     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+     aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" title="Início">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mural.html" title="Mural">Mural</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artistas.html" title="Artistas">Artistas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html" title="Galeria">Galeria</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="cadastro.html" title="Logar/Cadastrar">Logar | Cadastrar</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" title="Sobre Nós">
+                                Sobre Nós
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#parcerias" title="Parceiros">Parceiros</a>
+                                <a class="dropdown-item" href="work.html" title="Como Funciona">Como Funciona</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="about.html" title="Sobre Nós">Sobre Nós</a>
+                            </div>
+                        </li>
+
+                    </ul>
+    <form class="form-inline my-2 my-lg-0 form-1">
+                        <input class="form-control mr-sm-2 pesq-1" type="search" placeholder="Digite..."
+                            aria-label="Search" title="Barra de Pesquisa">
+                        <button class="btn btn-outline my-2 my-sm-0 btn-2 " type="submit" title="Pesquisar">Pesquisar</button>
+                    </form>
+   </div>
+  </div>
+ </nav>
+
+
+</header>
+
+<!-- Hero Section -->
+
+<section id="hero">
+ <div class="container">
+
+  <div class="row main-hero-content">
+
+   <div class="col-md-6">
+    <h1>Login | Cadastro</h1>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- Dados Section -->
+
+<section id="dados">
+ <form>
+  <div class="container">
+   <div class="row justify-content-center">
+    <fieldset>
+     <legend class="text-center">Entrar</legend>
+     <div>
+      <input class="form-control mr-sm-2 input-1" type="email" id="email" size="45" maxlength="40"
+      placeholder="E-mail" autofocus>
+     </div>
+     <hr>
+
+     <div>
+      <input class="form-control mr-sm-2 input-1" type="password" id="senha" size="16"
+      maxlength="16" placeholder="Password">
+     </div>
+     <div class="botao">
+      <button class="btn btn-outline my-2 my-sm-0 btn-3" type="submit" value="login"
+      id="login">Logar</button>
+     </div>
+     <hr>
+    </fieldset>
+   </div>
+  </div>
+
+  <div class="container">
+   <div class="row justify-content-center">
+    <fieldset>
+     <legend class="dd_cadas text-center">Dados de Cadastro</legend>
+     <div>
+      <input class="form-control mr-sm-2 input-1" type="text" id="name" size="45" maxlength="60"
+      placeholder="Nome Completo">
+     </div>
+
+     <div>
+      <hr>
+      <div>
+       <input class="form-control mr-sm-2 input-1" type="email" id="email" size="45"
+       maxlength="60" placeholder="E-mail">
+      </div>
+      <hr>
+
+
+      <div>
+       <label for="data">Data de Nascimento:</label>
+       <input class="form-control mr-sm-2 input-1" type="date" name="data">
+       <hr>
+
+       <label for="sexo">Sexo: </label><br>
+       <input type="radio" id="masculino" name="sexo" value="m">
+       <label for="masculino">Masculino</label><br>
+
+       <input type="radio" id="feminino" name="sexo" value="f">
+       <label for="feminino">Feminino</label><br>
+
+       <input type="radio" id="outro" name="sexo" value="o">
+       <label for="outro">Não Informar</label>
+      </div>
+     </fieldset>
+     <hr>
+
+     <div class="container">
+      <div class="row justify-content-center">
+       <fieldset>
+        <legend class="dd_ender text-center">Dados de Endereço</legend>
+        <div class="form-group form-inline">
+         <label for="cidade">Cidade:</label>
+         <div class="input-space">
+          <input class="form-control mr-sm-2 input-1" type="text" id="cidade" size="40"
+          maxlength="25" placeholder="Sua cidade" list="cidades">
+         </div>
+        </div>
+       </fieldset>
+      </div>
+     </div>
+
+     <div class="container">
+      <div class="row justify-content-center">
+       <fieldset>
+        <br>
+        <div class="form-group form-inline">
+         <label for="estado">Estado:</label>
+         <div class="input-space">
+          <select class="form-control mr-sm-2 input-1" id="estado">
+           <optgroup label="Região Sudeste">
+            <option value="ES">Espírito Santo</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="SP">São Paulo</option>
+           </optgroup>
+
+           <optgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="SC">Santa Catarina</option>
+           </optgroup>
+
+           <optgroup label="Região Centro Oeste">
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Moto Grosso do Sul</option>
+            <option value="GO">Goiás</option>
+           </optgroup>
+
+           <optgroup label="Região Nordeste">
+            <option value="MA">Maranhão</option>
+            <option value="PI">Piauí</option>
+            <option value="CE">Ceará</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="PE">Pernabuco</option>
+            <option value="PB">Paraíba</option>
+            <option value="SE">Sergipe</option>
+            <option value="AL">Alagoas</option>
+            <option value="BA">Bahia</option>
+           </optgroup>
+           <optgroup label="Região Norte">
+            <option value="AM">Amazonas</option>
+            <option value="RR">Roraima</option>
+            <option value="AP">Amapá</option>
+            <option value="PA">Pará</option>
+            <option value="TO">Tocatins</option>
+            <option value="RO">Rodônia</option>
+            <option value="AC">Acre</option>
+           </optgroup>
+          </div>
+          <label for="logradouro">Logradouro:</label>
+          <input class="form-control mr-sm-2 input-1" type="text" id="logradouro" size="30"
+          maxlength="40" placeholder="Rua, AV, Rod">
+         </div>
+
+         <input class="form-control mr-sm-2 input-1" type="text" id="numero" min="0" max="9999"
+         placeholder="Núm." maxlength="6" size="6">
+
+         <button class="btn btn-outline my-2 my-sm-0 btn-3" type="submit" value="enviar" id="enviar">Enviar</button>
+        </select>
+       </fieldset>
+      </div>
+     </div>
+    </form>
+   </section>
+
+   <section id="download">
+    <div class="container">
+     <div class="row download-title justify-content-center">
+      <h2>Baixe nosso APP!</h2>
+     </div>
+     <div class="download-body justify-content-center text-center">
+      <p>Nosso app da Green Union irá te acompanhar onde você estiver, continue reciclando, o meio ambiente
+       agradece, tenha a Green Union em seu bolso, e faça do mundo um lugar mais limpo e artistico.<br>
+       <span>Green Union</span>
+      </p>
+      <div class="download-btns">
+       <a href="#" class="btn btn-outline btn-1 apple"><i class="fab fa-apple "></i> App
+       Store</a>
+       <a href="#" class="btn btn-outline btn-1 "><i class="fab fa-android android "></i> Play
+       Store</a>
+      </div>
+
+     </div>
+    </div>
+   </section>
+
+
+   <script src="./js/script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+   <!--Mudar Navbar na rolagem do Scrool-->
+   <script>
+    $(window).scroll(function () {
+     $('nav').toggleClass('scrolled', $(this).scrollTop() > 120)
+    });
+   </script>
+  </body>
+
+  </html>
