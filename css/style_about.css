@@ -1,0 +1,55 @@
+/* ========== Sobre =========== */
+
+#sobre {
+    top: 5rem;
+}
+
+/* ========== Barra Branca =========== */
+
+#hero {
+    background-image: linear-gradient(to right, #9cbf63, transparent), url("../img/hero-bg3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+
+#hero::after {
+    content: "";
+    position: absolute !important;
+    background-color: #ffffff;
+    width: 100%;
+    height: 25%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    right: 0;
+    left: 0;
+    bottom: -1rem;
+}
+
+  
+/* ========== Download Barra Branca =========== */
+
+#download {
+    background-image: linear-gradient(to right, rgba(119, 224, 63, 0.5), #9cbf63), url("../img/download-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 6rem;
+    position: relative;
+    background-position-y: 1rem;
+}
+
+#download::before {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 20%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    right: -50px;
+    left: 0;
+    top: -5rem;
+}
