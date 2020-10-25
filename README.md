@@ -17,3 +17,7 @@ O site foi feito para a matéria de PCA da minha universidade e não foi complet
 * Banco de Dados
 * Abas para usuários e artistas
 * Documentação no site
+
+# Dê uma olhada no site 😊
+
+https://wendel-de-andrade.github.io/Green-Union/
